@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4df955c2-0d74-4344-98ab-6778c8921338" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/forTortoiseProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/post.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/schemas.py" afterDir="false" />
+    <list default="true" id="4df955c2-0d74-4344-98ab-6778c8921338" name="Changes" comment="not worked tests">
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routers/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/post.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routers/tag.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/tag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/test_tortoise_fastapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/test_tortoise_fastapi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3-wal" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +75,27 @@
       <option name="presentableId" value="Default" />
       <updated>1737342097133</updated>
     </task>
+    <task id="LOCAL-00001" summary="not worked tests">
+      <option name="closed" value="true" />
+      <created>1737951169813</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737951169813</updated>
+    </task>
+    <task id="LOCAL-00002" summary="not worked tests">
+      <option name="closed" value="true" />
+      <created>1737951210754</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737951210754</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="not worked tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="not worked tests" />
   </component>
 </project>
