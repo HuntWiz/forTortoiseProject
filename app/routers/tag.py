@@ -11,12 +11,12 @@ from app.models.tag import Tag
 router = APIRouter(prefix='/tag', tags=['tag'])
 
 
-@router.post("/tags/", response_model=TagOut)
+@router.post("/tags", response_model=TagOut)
 async def create_tag(tag: CreateTag):
     tag_obj = await Tag.create(**tag.dict())
     return TagOut.from_orm(tag_obj)
 
-@router.get("/tags/", response_model=List[TagOut])
+@router.get("/tags", response_model=List[TagOut])
 async def get_tags():
     tags = await Tag.all().prefetch_related("posts")
     return [TagOut.model_validate(tag) for tag in tags]

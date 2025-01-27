@@ -11,12 +11,12 @@ from app.models.tag import Tag
 router = APIRouter(prefix='/post', tags=['post'])
 
 
-@router.post("/posts/", response_model=PostOut)
+@router.post("/posts", response_model=PostOut)
 async def create_post(post: CreatePost):
     post_obj = await Post.create(**post.model_dump())
-    return PostOut.from_orm(post_obj)
+    return PostOut.model_validate(post_obj)
 
-@router.get("/posts/", response_model=List[PostOut])
+@router.get("/posts", response_model=List[PostOut])
 async def get_posts():
     posts = await Post.all()
     return [PostOut.model_validate(post) for post in posts]
@@ -25,7 +25,7 @@ async def get_posts():
 async def get_post(post_id: int):
     try:
         post = await Post.get(id=post_id)
-        return PostOut.from_orm(post)
+        return PostOut.model_validate(post)
     except DoesNotExist:
         raise HTTPException(status_code=404, detail="Post not found")
 
@@ -33,7 +33,7 @@ async def get_post(post_id: int):
 async def update_post(post_id: int, post: UpdatePost):
     await Post.filter(id=post_id).update(**post.model_dump(exclude_unset=True))
     post = await Post.get(id=post_id)
-    return PostOut.from_orm(post)
+    return PostOut.model_validate(post)
 
 
 @router.delete("/posts/{post_id}")
